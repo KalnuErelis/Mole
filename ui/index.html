@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mole UI Concept</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">M</div>
+          <div class="brand-text">
+            <span>Mole</span>
+            <small>Mac cleanup and system insight</small>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#modules">Modules</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#safety">Safety</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="ghost" href="https://github.com/tw93/Mole" target="_blank" rel="noreferrer">GitHub</a>
+          <button class="primary" data-copy="curl -fsSL https://raw.githubusercontent.com/tw93/mole/main/install.sh | bash">
+            Copy install
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <div class="pill">Native macOS toolkit</div>
+            <h1>Deep clean, uninstall, analyze, and monitor in one fast TUI.</h1>
+            <p>
+              Mole combines safe cleanup, disk analysis, and live system status into a single binary.
+              Keep your Mac lean without guessing what can be removed.
+            </p>
+            <div class="cta">
+              <button class="primary" data-copy="brew install tw93/tap/mole">Copy Homebrew</button>
+              <button class="secondary" data-scroll="#features">Explore features</button>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <span class="meta-label">Core modes</span>
+                <span class="meta-value">clean, uninstall, analyze, status, purge</span>
+              </div>
+              <div>
+                <span class="meta-label">Safety</span>
+                <span class="meta-value">Dry-run previews, protected paths</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-terminal" aria-label="Sample terminal output">
+            <div class="terminal-top">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="terminal-title">mo analyze</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code>Analyze Disk  ~/Documents  |  Total: 156.8GB
+
+  1. ███████████████████  48.2%  |  Library                75.4GB
+  2. ██████████░░░░░░░░░  22.1%  |  Downloads              34.6GB
+  3. ████░░░░░░░░░░░░░░░  14.3%  |  Movies                 22.4GB
+  4. ███░░░░░░░░░░░░░░░░  10.8%  |  Documents              16.9GB
+  5. ██░░░░░░░░░░░░░░░░░   5.2%  |  backup_2023.zip         8.2GB
+
+  ↑↓←→ Navigate  |  O Open  |  F Show  |  Q Quit</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="section">
+          <div class="section-head">
+            <div>
+              <h2>One toolkit, five power moves.</h2>
+              <p>Every command is focused, fast, and consistent with a shared navigation model.</p>
+            </div>
+            <div class="chips">
+              <span>Safe remove</span>
+              <span>Dry run</span>
+              <span>Keyboard-first</span>
+            </div>
+          </div>
+          <div class="feature-grid">
+            <article class="card">
+              <div class="icon">CL</div>
+              <h3>Deep cleanup</h3>
+              <p>Scan caches, logs, and leftovers with explicit output before anything is deleted.</p>
+            </article>
+            <article class="card">
+              <div class="icon">UN</div>
+              <h3>Smart uninstall</h3>
+              <p>Remove apps plus the files hidden across system folders and launch agents.</p>
+            </article>
+            <article class="card">
+              <div class="icon">AN</div>
+              <h3>Disk analyzer</h3>
+              <p>Navigate disk usage with a fast TUI and pinpoint oversized folders instantly.</p>
+            </article>
+            <article class="card">
+              <div class="icon">ST</div>
+              <h3>Live status</h3>
+              <p>Track CPU, memory, network, and temperature in a real-time dashboard.</p>
+            </article>
+            <article class="card">
+              <div class="icon">PG</div>
+              <h3>Project purge</h3>
+              <p>Clean build artifacts like node_modules or target without touching source.</p>
+            </article>
+            <article class="card">
+              <div class="icon">OP</div>
+              <h3>Optimize</h3>
+              <p>Refresh system caches, rebuild indexes, and kick services safely.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="modules" class="section">
+          <div class="section-head">
+            <div>
+              <h2>Command modules with shared UX.</h2>
+              <p>Every flow sticks to the same keybindings and a focused, minimal layout.</p>
+            </div>
+            <button class="secondary" data-copy="mo --help">Copy help command</button>
+          </div>
+          <div class="module-grid">
+            <div class="module">
+              <div class="module-title">mo clean</div>
+              <p>Audit caches, logs, and app leftovers with a summary and dry-run mode.</p>
+              <ul>
+                <li>Whitelists for protected paths</li>
+                <li>Category totals per cleanup step</li>
+                <li>Explicit deletions only</li>
+              </ul>
+            </div>
+            <div class="module">
+              <div class="module-title">mo uninstall</div>
+              <p>Pick apps, view related files, and remove everything with a single action.</p>
+              <ul>
+                <li>Top offenders ranked by size</li>
+                <li>Recent vs old app grouping</li>
+                <li>Path previews before delete</li>
+              </ul>
+            </div>
+            <div class="module">
+              <div class="module-title">mo analyze</div>
+              <p>Zoom into directories and sort by size or age with responsive navigation.</p>
+              <ul>
+                <li>Worker pool optimized for speed</li>
+                <li>File age badges for context</li>
+                <li>Quick open and delete actions</li>
+              </ul>
+            </div>
+            <div class="module">
+              <div class="module-title">mo status</div>
+              <p>Stream live system metrics and a health score with zero setup.</p>
+              <ul>
+                <li>CPU, memory, disk, power stats</li>
+                <li>Real-time network throughput</li>
+                <li>Top process snapshots</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="workflow" class="section">
+          <div class="workflow">
+            <div>
+              <h2>Keep the workflow calm and predictable.</h2>
+              <p>Start with a dry run, inspect results, then clean. The same flow applies to every module.</p>
+              <div class="workflow-steps">
+                <div class="step">
+                  <span>01</span>
+                  <div>
+                    <strong>Inspect</strong>
+                    <p>See file counts, sizes, and locations before any action.</p>
+                  </div>
+                </div>
+                <div class="step">
+                  <span>02</span>
+                  <div>
+                    <strong>Confirm</strong>
+                    <p>Choose what to keep with whitelists and module filters.</p>
+                  </div>
+                </div>
+                <div class="step">
+                  <span>03</span>
+                  <div>
+                    <strong>Execute</strong>
+                    <p>Run cleanup or uninstall with guarded safe removal.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="workflow-panel">
+              <h3>Command palette</h3>
+              <div class="palette">
+                <div class="palette-row">
+                  <span>mo clean --dry-run</span>
+                  <button class="ghost" data-copy="mo clean --dry-run">Copy</button>
+                </div>
+                <div class="palette-row">
+                  <span>mo uninstall</span>
+                  <button class="ghost" data-copy="mo uninstall">Copy</button>
+                </div>
+                <div class="palette-row">
+                  <span>mo analyze</span>
+                  <button class="ghost" data-copy="mo analyze">Copy</button>
+                </div>
+                <div class="palette-row">
+                  <span>mo status</span>
+                  <button class="ghost" data-copy="mo status">Copy</button>
+                </div>
+              </div>
+              <p class="hint">Tip: Add <span class="mono">--debug</span> to see verbose logs.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="safety" class="section">
+          <div class="safety">
+            <div>
+              <h2>Safety layers built into every path.</h2>
+              <p>Protected deletions, explicit path validation, and exit-safe operations.</p>
+            </div>
+            <div class="safety-grid">
+              <div class="safety-card">
+                <h3>Safe remove</h3>
+                <p>Strict guards prevent accidental root or system deletions.</p>
+              </div>
+              <div class="safety-card">
+                <h3>Transparent logging</h3>
+                <p>Every step prints what happens so you can trust the output.</p>
+              </div>
+              <div class="safety-card">
+                <h3>Dry-run first</h3>
+                <p>Preview the cleanup plan before running any destructive action.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>Mole</strong>
+          <p>Native macOS cleanup and analysis for people who want control.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/tw93/Mole" target="_blank" rel="noreferrer">Repository</a>
+          <a href="https://github.com/tw93/Mole/releases" target="_blank" rel="noreferrer">Releases</a>
+          <a href="https://github.com/tw93/Mole/blob/main/SECURITY_AUDIT.md" target="_blank" rel="noreferrer">Security audit</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
