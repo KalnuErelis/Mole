@@ -1,0 +1,36 @@
+name: MoleApp
+options:
+  bundleIdPrefix: com.mole
+  deploymentTarget:
+    macOS: "13.0"
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.mole.app
+    SWIFT_VERSION: "5.9"
+    MOLE_CLI_PATH: "$(SRCROOT)/mo"
+
+packages:
+  SwiftTerm:
+    url: https://github.com/migueldeicaza/SwiftTerm
+    from: 1.0.0
+
+targets:
+  MoleApp:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources
+    dependencies:
+      - package: SwiftTerm
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Mole
+        CFBundleName: Mole
+        LSMinimumSystemVersion: "13.0"
+        NSHighResolutionCapable: true
+        MoleCLIPath: "$(MOLE_CLI_PATH)"
+    settings:
+      base:
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 0.1.0

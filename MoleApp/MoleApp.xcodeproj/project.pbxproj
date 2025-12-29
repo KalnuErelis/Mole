@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154035086E4B7A4C1E72B647 /* MoleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5652C070E014FE6B0290D /* MoleAppApp.swift */; };
+		35BF83B0DEF0FAE9857BA3B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A421D39809CA2543C2CB6A9 /* ContentView.swift */; };
+		3951A0A3CA1BE8722EABC31F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63AEFC37B5018DD71E3E7D6 /* SettingsView.swift */; };
+		531F23A99AE2826A3F5C9CE4 /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 856A479287C375A1FFCA130D /* SwiftTerm */; };
+		850AF9E4F9720288D29D5C34 /* TerminalContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536C9087ABE11E1F428934B9 /* TerminalContainerView.swift */; };
+		9C3B46487B7D3A2ABBDB2661 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B19C2BD6233226771E6AA4B /* Module.swift */; };
+		B4CCCE30ADCE98B5C96720C5 /* TerminalSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7FFC22ED7B00B1AF34E57 /* TerminalSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B19C2BD6233226771E6AA4B /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		536C9087ABE11E1F428934B9 /* TerminalContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalContainerView.swift; sourceTree = "<group>"; };
+		5A421D39809CA2543C2CB6A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BB7FFC22ED7B00B1AF34E57 /* TerminalSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalSession.swift; sourceTree = "<group>"; };
+		A24352C3B7A29F2E92F8808F /* MoleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63AEFC37B5018DD71E3E7D6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E1F5652C070E014FE6B0290D /* MoleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleAppApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74EC81439C9F2E9B4FC2BCF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531F23A99AE2826A3F5C9CE4 /* SwiftTerm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5161D08A386FEC0A5A6D7CB4 = {
+			isa = PBXGroup;
+			children = (
+				83D11154F5C50C365CA404E1 /* Sources */,
+				FA6A452C344DF71F20BE1081 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83D11154F5C50C365CA404E1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5A421D39809CA2543C2CB6A9 /* ContentView.swift */,
+				1B19C2BD6233226771E6AA4B /* Module.swift */,
+				E1F5652C070E014FE6B0290D /* MoleAppApp.swift */,
+				B63AEFC37B5018DD71E3E7D6 /* SettingsView.swift */,
+				536C9087ABE11E1F428934B9 /* TerminalContainerView.swift */,
+				5BB7FFC22ED7B00B1AF34E57 /* TerminalSession.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FA6A452C344DF71F20BE1081 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A24352C3B7A29F2E92F8808F /* MoleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6547306BAB809F7DA58927C8 /* MoleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69F53571EF507A64687B556E /* Build configuration list for PBXNativeTarget "MoleApp" */;
+			buildPhases = (
+				9734F0D7B04CBC13CFA9C73B /* Sources */,
+				74EC81439C9F2E9B4FC2BCF0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoleApp;
+			packageProductDependencies = (
+				856A479287C375A1FFCA130D /* SwiftTerm */,
+			);
+			productName = MoleApp;
+			productReference = A24352C3B7A29F2E92F8808F /* MoleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1F90591F26DEA49AA5D00FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 09849C0A0AC4C277D689DD1F /* Build configuration list for PBXProject "MoleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5161D08A386FEC0A5A6D7CB4;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F49D2F07148FC5744488E45C /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6547306BAB809F7DA58927C8 /* MoleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9734F0D7B04CBC13CFA9C73B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35BF83B0DEF0FAE9857BA3B5 /* ContentView.swift in Sources */,
+				9C3B46487B7D3A2ABBDB2661 /* Module.swift in Sources */,
+				154035086E4B7A4C1E72B647 /* MoleAppApp.swift in Sources */,
+				3951A0A3CA1BE8722EABC31F /* SettingsView.swift in Sources */,
+				850AF9E4F9720288D29D5C34 /* TerminalContainerView.swift in Sources */,
+				B4CCCE30ADCE98B5C96720C5 /* TerminalSession.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0912C4A23363EE9B727DA6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MOLE_CLI_PATH = "$(SRCROOT)/mo";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mole.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		2008A9DA79B2241ABFEB77CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		610A093CA32614FCB51787FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AD578917EF47D88958F696C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MOLE_CLI_PATH = "$(SRCROOT)/mo";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mole.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09849C0A0AC4C277D689DD1F /* Build configuration list for PBXProject "MoleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD578917EF47D88958F696C8 /* Debug */,
+				0912C4A23363EE9B727DA6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		69F53571EF507A64687B556E /* Build configuration list for PBXNativeTarget "MoleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610A093CA32614FCB51787FE /* Debug */,
+				2008A9DA79B2241ABFEB77CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F49D2F07148FC5744488E45C /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		856A479287C375A1FFCA130D /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49D2F07148FC5744488E45C /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A1F90591F26DEA49AA5D00FC /* Project object */;
+}

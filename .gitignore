@@ -58,3 +58,9 @@ bin/analyze-go
 bin/status-go
 bin/analyze-darwin-*
 bin/status-darwin-*
+
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+*.xcworkspace/
